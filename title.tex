@@ -1,0 +1,17 @@
+$if(title)$
+\title{\raggedright{$title$}}
+$endif$
+$if(subtitle)$
+$if(beamer)$
+$else$
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+$endif$
+\subtitle{\raggedright{$subtitle$}}
+$endif$
+\date{\raggedright{$date$}}
+\author{\raggedright{$author$}}

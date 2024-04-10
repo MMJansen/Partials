@@ -1,0 +1,19 @@
+---
+title: "Partials"
+subtitle: "with a subtitle"
+author: "Author also left aligned"
+format: 
+  pdf:
+    template-partials:
+      - title.tex
+    number-sections: true
+    toc: false
+---
+
+\tableofcontents
+
+# Chapter title
+
+## Paragraph
+
+Some text
